@@ -1,0 +1,2 @@
+For this question, we try to find out a gray code given a point n. We found that we can do this iteratively, where for any number n, we first try to find out the result array for number n-1, and we know that for the last point in the result array of n-1, the last number should be like 0XX...XXX, so it should be connected to number 1XXX...XXX, and if we ignore the head "1", then we reverse the former array, then add an "1" in front of each, and append them to the back of the former array. 
+
