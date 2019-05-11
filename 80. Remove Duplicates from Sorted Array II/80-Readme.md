@@ -1,0 +1,1 @@
+For this question, we just try to modify the first most elements. We use an iterator to indicate at which place we should modify the number, and go through the whole sorted array. We also need to find out how many times each number appears in the array. We count it, and try to modify it.
