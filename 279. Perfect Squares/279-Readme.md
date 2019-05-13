@@ -1,0 +1,7 @@
+For this question, we try to use the BFS method, where we subtracts all possible perfect squares less than n, and find the shortest path through the root to a leaf, where all leaves have a val 0. This method works, but it is not a good one, since each node we will subtract a node once, making the time complexity O(n ** sqrt(n))
+
+However, we can use a dictionary to record whether a node has already been visited. And since we are using the BFS, a second steps for a visited record will definitely not better than the first one, we just need to simply skep the node. Thus we only need to visit each node once, making the worst case time complexity O(n * sqrt(n)).
+
+In the above worst case analysis, we assume that each time we subtract an 1, which should definitely far below the actual worst case. And we can find a greedy algorithm where we simply subtract the largest perfect square smaller than n, and we can find a solution, and the real answer to this question should be better than or eqaul to this result, so the worst case of establishing a path my algorithm should be better than the greedy algorithm. And let's suppose we are given a number just lower than (x+1)^2, which should be (x+1)^2 -1, so ((x+1)^2 -1)/x^2 = 1 + 2/x, so for any x larger than 3, only one largest perfect square can be subtracted, making the time complexity O(sqrt(n)).
+
+And since the BFS tree is at most O(sqrt(n)) deep, and each node has at most O(sqrt(n)) child, and visiting each child needs O(1) time, the time complexity should be O(n)

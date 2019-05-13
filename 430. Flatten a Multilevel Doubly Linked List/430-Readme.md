@@ -1,0 +1,1 @@
+We solve this question using iterative ways. We continue go through the linked list, and if we find a point that has a child, we just append the main linked list of the child after the node, but before the node's next. And after going through the whole linked list, we can reduce all the multilevels.
