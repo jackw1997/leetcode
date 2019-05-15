@@ -1,0 +1,1 @@
+For this question, we use the binominal search. We set a lower bound and a higher bound where a possible picked number may exist, and choose the middle value of the two bound. Afterwards we just identify whether the middle value is higher or lower, and update the bounds.
