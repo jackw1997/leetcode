@@ -1,0 +1,1 @@
+In this question, we are required to find whether a linked list is palindrome. So we try to reverse the linked list and find out whether it is the same as the former one. We use a stack to record each node, and pop the nodes to test whether it is the same as the nodes at the beginning. The time complexity is O(n), and the space complexity is O(n)
